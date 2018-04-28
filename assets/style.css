@@ -6,8 +6,11 @@
 
 
 .crystal{
-
 		
+}
+
+.crystal:hover{
+	cursor: pointer;
 }
 
 
