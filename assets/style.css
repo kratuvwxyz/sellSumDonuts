@@ -1,0 +1,21 @@
+.crystals{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+.crystal{
+
+		
+}
+
+
+.crystal img{ 
+    transform-origin:50% 50%;
+    animation:60s rotateRight infinite linear; 
+}
+
+@keyframes rotateRight{
+    100%{ transform:rotate(360deg); }
+}
