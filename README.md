@@ -1,7 +1,12 @@
 # Sell Sum Donuts
 
-- Game for all ages<br/>
-- Game that sharp your math skills<br/>
-- Game that boost your memory<br/>
+
+![](/assets/images/heroImg.png)
+
+
+- Game for all ages with **Easy**, **Medium**, and **Expert** levels.
+- Game that sharp your math skills.
+- Game that boost your memory.
+- Game that has lots of fun!
 
 
