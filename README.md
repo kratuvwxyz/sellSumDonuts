@@ -25,4 +25,4 @@
 ## Questions
 If you have any questions or find any bug, please contact <a href="mailto:github@desaign.studio?Subject=Sell Sum Donuts at Github">github@desaign.studio</a>.
 
-<img src="/assets/images/DESAIGNLLC.svg" alt="sellSumDonuts" width="100px"/> | DESAIGN LLC &copy; 2018 | All rights reseverd.
+<img src="/assets/images/DESAIGNLLC.svg" alt="sellSumDonuts" width="200px"/> &copy; 2018 | All Rights Reseverd at <a href="http://desaign.studio" target="_blank" style="text-decoration:none;">DESAIGN.STUDIO</a>
