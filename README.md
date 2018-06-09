@@ -1,4 +1,4 @@
-# Sell Some Donuts
+# Sell Sum Donuts
 
 - Game for all ages<br/>
 - Game that sharp your math skills<br/>
