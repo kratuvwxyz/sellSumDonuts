@@ -10,7 +10,7 @@
 - Game that has lots of fun!
 
 
-## How To 
+## How To Play
 
 1. You will be given a random number of money at the start of the game.
 2. There are four donuts type. By clicking on a donut you will sell a specific amount of donut and earn money to cash register.
@@ -25,4 +25,6 @@
 ## Questions
 If you have any questions or find any bug, please contact <a href="mailto:github@desaign.studio?Subject=Sell Sum Donuts at Github">github@desaign.studio</a>.
 
-<img src="/assets/images/DESAIGNLLC.svg" alt="sellSumDonuts" width="200px"/> &copy; 2018 | All Rights Reseverd at <a href="http://desaign.studio" target="_blank" style="text-decoration:none;">DESAIGN.STUDIO</a>
+<hr/>
+
+<img src="/assets/images/DESAIGNLLC.svg" alt="DESAIGN LLC" width="250px"/> &copy; 2018 | All Rights Reseverd at <a href="http://desaign.studio" target="_blank" style="text-decoration:none;">DESAIGN.STUDIO</a>
