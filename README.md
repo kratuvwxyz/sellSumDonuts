@@ -20,7 +20,10 @@
     - Medium and Expert modes hide the value of each donut from you until you click on it.
     - Expert mode hides the value of total number of money you selling.
 5. Each time when the game starts, the game will change the values of each donut.
-<br/>**Let's Play**
+
+<br/>
+
+:shipit: &#160; **Let's Play**
 
 ## Questions
 If you have any questions or find any bug, please contact <a href="mailto:github@desaign.studio?Subject=Sell Sum Donuts at Github">github@desaign.studio</a>.
