@@ -1,4 +1,4 @@
-# <img src="/assets/images/heroImg.png" alt="sellSumDonuts" width="200px"/>Sell Sum Donuts
+# Sell Sum Donuts<img src="/assets/images/heroImg.png" alt="sellSumDonuts" width="200px"/>
 
 
 
