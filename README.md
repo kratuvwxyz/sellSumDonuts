@@ -25,4 +25,4 @@ If you have any questions or find any bug, please contact <a href="mailto:github
 
 <hr/>
 
-<img src="/assets/images/DESAIGNLLC.svg" alt="DESAIGN LLC" width="250px"/> &copy; 2018 | All Rights Reseverd at <a href="http://desaign.studio" target="_blank" style="text-decoration:none;">DESAIGN.STUDIO</a>
+<img src="/assets/images/DESAIGNLLC.svg" alt="DESAIGN LLC" width="250px"/> &copy; 2018 <a href="http://desaign.studio" target="_blank" style="text-decoration:none;">DESAIGN.STUDIO</a> All Rights Reseverd
