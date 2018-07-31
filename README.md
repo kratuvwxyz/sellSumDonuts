@@ -21,7 +21,7 @@
 :shipit: &#160; **<a href="https://kratuvwxyz.github.io/sellSumDonuts/#" target="_blank" style="text-decoration:none;">Let's Play</a>**
 
 ## Questions
-If you have any critic, concern or questions related to this project, please contact <a href="mailto:github@desaign.studio?Subject=Sell Sum Donuts at Github">github@desaign.studio</a>.
+If you have any critic, concern or questions related to this project, please contact at <a href="mailto:github@desaign.studio?Subject=Sell Sum Donuts at Github">github@desaign.studio</a>.
 
 <hr/>
 
