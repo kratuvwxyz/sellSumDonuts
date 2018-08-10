@@ -1,0 +1,29 @@
+.crystals {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    filter: drop-shadow(0 0 2px #333);
+}
+
+.crystals img {
+    width: 100%;
+    padding: 5% 5%;
+}
+
+.crystal img:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 10px #efefef);
+    width: 105%;
+    padding: 0% 5%;
+}
+
+.crystal img {
+    transform-origin: 50% 50%;
+    animation: 100s rotateRight infinite linear;
+}
+
+@keyframes rotateRight {
+    100% {
+        transform: rotate(360deg);
+    }
+}
