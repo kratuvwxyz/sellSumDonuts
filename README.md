@@ -25,10 +25,5 @@ If you have any critic, concern or questions related to this project, please con
 
 <hr/>
 
-<img src="/assets/images/DESAIGNLLC.svg" alt="DESAIGN LLC" width="250px"/> &copy; 2011-2018 <a href="http://desaign.studio" target="_blank" style="text-decoration:none;">DESAIGN.STUDIO</a> All Rights Reseverd
+<img src="https://kratuvwxyz.github.io/assets/images/footer/DESAIGNLLC.svg" alt="DESAIGN LLC" width="250px"/> &copy; 2011-2018 <a href="http://desaign.studio" target="_blank" style="text-decoration:none;">DESAIGN.STUDIO</a> All Rights Reseverd
 
-<hr/>
-
-<img src="https://kratuvwxyz.github.io/assets/images/footer/DESAIGNLLC.svg" alt="desaign llc" height="60" border="none" style="padding-bottom: 5px;" />
-
-                <span class="w3-display-bottom" style="white-space: nowrap; font-size: 12px; line-height: 20px; letter-spacing: 1px; color: #34495e; vertical-align: bottom;">&#160;&copy; 2011-<script type="text/javascript">var d = new Date();document.write(d.getFullYear());</script> <a href="http://desaign.studio" style="color:#e74c3c; text-decoration: underline; vertical-align: bottom;" target="_blank" >DESAIGN.STUDIO</a> All Rights Reseverd.</span>
