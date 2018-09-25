@@ -203,53 +203,78 @@
     <!--:::::::::::::::::::::::::::::::::::::::
   Footer
 ::::::::::::::::::::::::::::::::::::::::-->
-    <br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
 
-    <section id="footerSection">
+<section id="footerSection">
 
-        <footer class="w3-container w3-bottom w3-topbar w3-border-dark-gray w3-khaki" id="footerCopyright">
+    <footer class="w3-container w3-bottom w3-topbar w3-border-dark-gray w3-khaki" id="footerCopyright">
 
-            <!--links-->
-            <div id="footerLinks" class="w3-padding-16">
-                <a href="#" target="_blank"><i class="fa fa-github w3-btn" style="font-size:25px;color: #bd2c00;"></i></a> |
-                <a href="#" target="_blank"><i class="fa fa-linkedin-square w3-btn" style="font-size:25px;color: #0077b5;"></i></a> |
-                <a href="/" class="w3-text-dark-gray w3-btn">#sellSumDonuts</a>
-                <hr>
-            </div>
+        <!--links-->
+        <div id="footerLinks" class="w3-padding-16">
+            <a href="https://github.com/kratuvwxyz/sellSumDonuts" target="_blank"><i class="fa fa-github w3-btn" style="font-size:25px;color: #bd2c00;"></i></a> |
+            <a href="https://linkedin.com/in/desaignstudio" target="_blank"><i class="fa fa-linkedin-square w3-btn" style="font-size:25px;color: #0077b5;"></i></a> |
+            <a href="index.html" class="w3-text-dark-gray w3-btn">#SellSumDonuts</a>
+        </div>
 
-            <!--logo-->
-            <div id="logoCopyright" class="w3-row w3-display-container w3-padding-24">
+        <!--logo-->
+        <div id="logoCopyright" class="w3-row w3-display-container w3-padding-24">
 
-                <img src="https://kratuvwxyz.github.io/assets/images/footer/DESAIGNLLC.svg" alt="desaign llc" height="60" border="none" style="padding-bottom: 5px;" />
+            <img src="https://kratuvwxyz.github.io/assets/images/footer/DESAIGNLLC.svg" alt="desaign llc" height="60" border="none" style="padding-bottom: 5px;" />
 
-                <span class="w3-display-bottom" style="white-space: nowrap; font-size: 12px; line-height: 20px; letter-spacing: 1px; color: #34495e; vertical-align: bottom;">&#160;&copy; 2011-<script type="text/javascript">var d = new Date();document.write(d.getFullYear());</script> <a href="http://desaign.studio" style="color:#e74c3c; text-decoration: underline; vertical-align: bottom;" target="_blank" >DESAIGN.STUDIO</a> All Rights Reseverd.</span>
+            <span class="w3-display-bottom" style="white-space: nowrap; font-size: 12px; line-height: 20px; letter-spacing: 1px; color: #34495e; vertical-align: bottom;">&#160;&copy; 2011-<script type="text/javascript">var d = new Date();document.write(d.getFullYear());</script> <a href="http://desaign.studio" style="color:#e74c3c; text-decoration: underline; vertical-align: bottom;" target="_blank" >DESAIGN.STUDIO</a> All Rights Reseverd.</span>
 
-                <!--plog number-->
-                <div id="plog" class="w3-bottom w3-khaki" style="z-index: 99999"><span class="w3-display-bottomright w3-padding-small w3-margin-right w3-opacity" style="font-size: 10px;">18324C03AA</span></div>
+            <!--plog number-->
+            <div id="plog" class="w3-bottom w3-khaki" style="z-index: 99999"><span class="w3-display-bottomright w3-padding-small w3-margin-right w3-opacity" style="font-size: 10px;">18324C03AA</span></div>
 
-            </div>
+        </div>
 
-        </footer>
+    </footer>
 
-        <script type="text/javascript">
-            window.onscroll = function() {
-                scrollFunction()
-            };
+    <script type="text/javascript">
 
-            function scrollFunction() {
-                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                    document.getElementById("footerCopyright").style.bottom = "-140px";
-                } else {
-                    document.getElementById("footerCopyright").style.bottom = "0px";
-                }
+      $(function(){
+        $('#logoCopyright').hide();
+        if($(document).height() < $(window).height()){
+            $('#logoCopyright').show();
+        }
+        $(window).resize(function(){
+          if($(document).height() > $(window).height()){
+                $('#logoCopyright').slideUp('slow');
             }
+            else{
+                $('#logoCopyright').slideDown('slow');
+            }
+        });
+    });
 
-            $(".w3-btn").hover(function() {
-                $(this).css("box-shadow", "none");
-            });
-        </script>
+    $(window).scroll(function(){        
+        if ($(window).scrollTop() + $(window).height() >= $(document).height() - 0)
+        {
+                $('#logoCopyright').slideDown('slow');
+        }
+        else
+        {
+                $('#logoCopyright').slideUp('slow');
+        }
+    });
 
-    </section>
+    $(document).ready(function() {
+        if ($(window).height() >= $(document).height() )
+        {
+            $('#logoCopyright').data('size','hide');
+        }
+        else
+        {
+            $('#logoCopyright').data('size','show');
+        }
+    });
+
+      $(".w3-btn").hover(function() {
+          $(this).css("box-shadow", "none");
+      });
+    </script>
+
+</section>
 
 
     <!--:::::::::::::::::::::::::::::::::::::::
