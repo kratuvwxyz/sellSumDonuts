@@ -5,7 +5,7 @@
 - Game that boost your memory.
 - Game that has lots of fun!
 
-## How To Play
+### How to play?
 
 1. You will be given a random number of money at the start of the game.
 2. There are four donuts type. By clicking on a donut you will sell a specific amount of donut and earn money to cash register.

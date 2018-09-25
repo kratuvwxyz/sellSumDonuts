@@ -57,8 +57,8 @@ Game Structure
 
 var win = 0;
 var lost = 0;
-
-
+var randomValue = [];
+console.log(randomValue);
 
 //2
 
@@ -77,31 +77,48 @@ var startGame = function() {
 
     $("#result").html('Buyer wants to pay <span class="text-danger">$' + random_result + '</span>');
 
-    //2.2
+	//2.2
+	
+	//randomly generate number between 1 and 8 but never reapeat again and store in ranNums array.
+	var nums = [0,1,2,3,4,5,6,7],
+		ranNums = [],
+		l = nums.length,
+		m= 0;
+
+	while (l--) {
+		m = Math.floor(Math.random() * (l+1));
+		ranNums.push(nums[m]);
+		nums.splice(m,1);
+	}
+	console.log(ranNums);
 
     for (var i = 0; i < 4; i++) {
-        var random = Math.floor(Math.random() * 11) + 1; //value between 1 and 12
+		var random = Math.floor(Math.random() * 11) + 1; //value between 1 and 12
+		randomValue.push(random);
         var crystal = $("<div>");
         crystal.attr({
             "class": 'crystal',
             "data-random": random
-        });
-        console.log(random);
+		});
+		
         var images = ["assets/images/1.svg", "assets/images/2.svg", "assets/images/3.svg", "assets/images/4.svg", "assets/images/6.svg", "assets/images/7.svg", "assets/images/5.svg", "assets/images/8.svg"];
 
-        for (var j = 0; j < images.length; j++) {
-            var k = Math.floor(Math.random() * 7) + 1; //got 8 total images 
-        }
+		var k = [ranNums[1],ranNums[3],ranNums[5],ranNums[7]]
+		console.log("k " + k);
+		
+		crystal.html("<img src=" + images[k[i]] + " />");
+		$(".crystals").append(crystal);
 
-        crystal.html("<img src=" + images[k] + " />");
-
-        $(".crystals").append(crystal);
-
+		//easy mode set up
+			// var randomValue2;
+			// randomValue2=randomValue[i];
+			// $(".crystals").append(randomValue2);
+			// console.log(randomValue2);
+        
         $("#previous").html('$' + previous);
     }
 
 };
-
 
 startGame();
 
@@ -118,12 +135,14 @@ $(document).on('click', ".crystal", function() {
     if (previous > random_result) {
         lost++;
         $(".lost").html('Your losses: ' + lost);
-        previous = 0;
-        startGame();
+		previous = 0;
+		randomValue = [];
+		startGame();
     } else if (previous === random_result) {
         win++;
         $(".win").html('Your wins: ' + win);
-        previous = 0;
+		previous = 0;
+		randomValue = [];
         startGame();
     }
 });
@@ -131,11 +150,6 @@ $(document).on('click', ".crystal", function() {
 
 //4 - How To Play?
 
-$(".question").click(function() {
-    alert("First: you will be given a random number of money at the start of the game");
-    alert("Second: there are four donuts below. by clicking on a donut you will sell a specific amount of donut and earn money to cash register");
-    alert("Third: you win the game by matching your total score to random number, you lose the game if your total money number goes above the random number");
-    alert("Forth: the value of each donut is hidden from you until you click on it");
-    alert("Fifth: each time when the game starts, the game will change the values of each donut");
-    alert("Let's Play!");
-});
+//5 - Easy mode
+
+//6 - Hard mode

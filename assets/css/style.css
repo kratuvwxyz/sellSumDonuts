@@ -2,24 +2,29 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    filter: drop-shadow(0 0 2px #333);
+    filter: drop-shadow(0 0 2px #888);
+    padding: 2%;
 }
 
 .crystals img {
     width: 100%;
-    padding: 5% 5%;
+    padding: 2% 2%;
 }
 
 .crystal img:hover {
     cursor: pointer;
     filter: drop-shadow(0 0 10px #efefef);
-    width: 105%;
-    padding: 0% 5%;
+    width: 102%;
+    padding: 0% 2%;
 }
 
 .crystal img {
     transform-origin: 50% 50%;
     animation: 100s rotateRight infinite linear;
+}
+
+.hide {
+    display: none;
 }
 
 @keyframes rotateRight {
