@@ -17,7 +17,9 @@
         //0. Ground zero
         let wins = 0;
         let loss = 0;
-        
+        const donutValueArray = [];
+        console.log(donutValueArray);
+
         //1. let computer generate random number in between 40 to 100 to match with our total
         let compGenNum = Math.floor(Math.random() * 60) + 40;
         console.log(compGenNum);
@@ -31,7 +33,40 @@
         for (let i = 0; i < 4; i++) {
             console.log("For box #"+i);
             //this is prep before cooking
-            let donutPrice = Math.floor(Math.random() * 9) + 1;
+            let donutPrice=null;
+            // let donutPrice = Math.floor(Math.random() * 9) + 1;
+            console.log("donut price 38: " + donutPrice);
+            // donutValueArray.push(donutPrice);
+            //to stop generating same number
+            function trying(x, y){
+                    for(let j=0; j<y.length; j++){
+                        if(x===y[j]){
+                            console.log("x value before is "+x);
+                            x = x - 1;
+                            console.log("x value after is "+x);
+                            y.push(x);
+                            return x;
+                        }else{
+                            y.push(x);
+                            return x;
+                            console.log("x value after is "+x);
+                    } console.log("x value after is "+x);
+                }   
+                    
+                }
+            function stop(){
+                //where x is donutPrice
+                //where y is donutValueArray
+                donutPrice = Math.floor(Math.random() * 8) + 2;
+                console.log("donut price 45: " + donutPrice);
+                donutValueArray.push(donutPrice);
+                trying(donutPrice, donutValueArray);
+                // donutValueArray.push(donutPrice);
+                return donutPrice;
+
+            }
+            
+            donutPrice = stop();
             console.log("donut price: " + donutPrice);
             //this is div
             const donutBox = $('<div>');
@@ -47,9 +82,12 @@
             console.log('value: ' + value);
             $(donutBox).text(value);
         }
+
+
         
         //4. on click of each box get that value out
         $(document).on("click", '.blackBox', function(){
+
             //check if on click is working
             console.log('hi'); //it's working
             //now let's check value
