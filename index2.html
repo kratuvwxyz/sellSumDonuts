@@ -4,125 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/reset.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="assets/js/style.js"></script>
     <title>basic</title>
 </head>
 <body>
-    <div id="compGuess"></div>
-    <div id="box"></div>
-    <div id="myGuess"></div>
-    <div id="win"></div>
-    <div id="loss"></div>
-    <script>
-        //0. Ground zero
-        let wins = 0;
-        let loss = 0;
-        const donutValueArray = [];
-        console.log(donutValueArray);
+    <div id="game"></div>
 
-        //1. let computer generate random number in between 40 to 100 to match with our total
-        let compGenNum = Math.floor(Math.random() * 60) + 40;
-        console.log(compGenNum);
-        $("#compGuess").text(compGenNum);
-
-        //2. create a variable to hold our total value
-        let clickSumNum = 0;
-        console.log('this is click sum numbers: '+clickSumNum);
-
-        //3. create 4 different div donut boxes
-        for (let i = 0; i < 4; i++) {
-            console.log("For box #"+i);
-            //this is prep before cooking
-            let donutPrice=null;
-            // let donutPrice = Math.floor(Math.random() * 9) + 1;
-            console.log("donut price 38: " + donutPrice);
-            // donutValueArray.push(donutPrice);
-            //to stop generating same number
-            function trying(x, y){
-                    for(let j=0; j<y.length; j++){
-                        if(x===y[j]){
-                            console.log("x value before is "+x);
-                            x = x - 1;
-                            console.log("x value after is "+x);
-                            y.push(x);
-                            return x;
-                        }else{
-                            y.push(x);
-                            return x;
-                            console.log("x value after is "+x);
-                    } console.log("x value after is "+x);
-                }   
-                    
-                }
-            function stop(){
-                //where x is donutPrice
-                //where y is donutValueArray
-                donutPrice = Math.floor(Math.random() * 8) + 2;
-                console.log("donut price 45: " + donutPrice);
-                donutValueArray.push(donutPrice);
-                trying(donutPrice, donutValueArray);
-                // donutValueArray.push(donutPrice);
-                return donutPrice;
-
-            }
-            
-            donutPrice = stop();
-            console.log("donut price: " + donutPrice);
-            //this is div
-            const donutBox = $('<div>');
-            //show this on the screen with already exist div (box) in html
-            $('#box').append(donutBox);
-            //adding css
-            $(donutBox).addClass("blackBox");
-            $('.blackBox').css({"height":"100px","width":"100px","background-color":"black","color":"white","float":"left","margin-right":"20px"});
-            //adding donut price into donutBox with attribute
-            $(donutBox).attr({'donutValue':donutPrice});
-            //store that price in value variable
-            const value = parseInt($(donutBox).attr('donutValue'));
-            console.log('value: ' + value);
-            $(donutBox).text(value);
-        }
-
-
-        
-        //4. on click of each box get that value out
-        $(document).on("click", '.blackBox', function(){
-
-            //check if on click is working
-            console.log('hi'); //it's working
-            //now let's check value
-            console.log(this); //this tells you whole story
-            console.log(parseInt($(this).attr('donutValue')));
-            const value = parseInt($(this).attr('donutValue'));
-            //now add this value into click sum numbers
-            clickSumNum += value;
-            console.log('this is click sum numbers: '+clickSumNum);
-            console.log('Computer Generated this number: '+compGenNum);
-            $("#myGuess").text("Total: "+clickSumNum);
-            
-            //5. now just match computer and user total
-            if(compGenNum === clickSumNum){
-                wins++
-                $("#win").text("Wins: "+wins);
-                console.log(wins);
-            } else if(compGenNum<clickSumNum){
-                loss++
-                $("#loss").text("Losses: "+loss);
-                console.log(loss);
-            } else {
-                console.log('still need some donuts');
-            }
-        });
-                
-        
-        
-
-        
-        // $("#blackBox").addClass("cssChange");
-        // 
-
-        
-    </script>
     
 </body>
 </html>
