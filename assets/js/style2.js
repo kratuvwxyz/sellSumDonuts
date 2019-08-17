@@ -83,11 +83,23 @@ $(document).ready(function(){
             //game modes
             e = $('<span></span>').appendTo(d).text('Game Modes: ');
                 //f = low button
-                f = $('<button></button>').appendTo(d).text('EASY').addClass('btn btn-outline-success ml-2').click(function(){console.log('low button clicked')});
+                f = $('<button></button>').appendTo(d).text('EASY').addClass('btn btn-outline-success mx-2 my-3').click(function(){console.log('low button clicked')});
                 //g = midium button
-                g = $('<button></button>').appendTo(d).text('NORMAL').addClass('btn btn-outline-warning ml-2').click(function(){console.log('midum button clicked')});
+                g = $('<button></button>').appendTo(d).text('NORMAL').addClass('btn btn-outline-warning mx-2 my-3').click(function(){console.log('midum button clicked')});
                 //h = low button
-                h = $('<button></button>').appendTo(d).text('EXPERT').addClass('btn btn-outline-danger ml-2').click(function(){console.log('high button clicked')});
+                h = $('<button></button>').appendTo(d).text('EXPERT').addClass('btn btn-outline-danger mx-2 my-3').click(function(){console.log('high button clicked')});
+
+            //wins and losses
+
+            //wins
+            let wins = $('<button></button>').addClass('btn btn-secondary my-3 mx-2').text('WINS ').appendTo(d);
+            //result = u
+            let uWins = $('<span></span>').addClass('wins badge badge-light ml-1').text(ii).appendTo(wins);//console.log(u);
+
+            //loss = v
+            let loss = $('<button></button>').addClass('btn btn-secondary my-3 mx-2').text('LOSS ').appendTo(d);
+            //result = w
+            let uLoss = $('<span></span>').addClass('loss badge badge-light ml-1').text(jj).appendTo(loss);//console.log(w);
 
         //game start
         function startGame(){
@@ -152,7 +164,7 @@ $(document).ready(function(){
         }
 
         //when you click the ".donut" class button
-        $('.donut').click(function(){
+        $(document).on('click', '.donut', function(){
             console.log('you just clicked');
             
             //zz = value you store when you click the button
@@ -181,30 +193,33 @@ $(document).ready(function(){
                 console.log('you loss');
                 console.log('loss:' + jj);
                 console.log('we need to reset this');
+                uLoss.text(jj);
+                //reset
                 r = 0;
                 console.log(r);
                 t = [];
                 ll = Math.floor(Math.random() * 18) + 30;
                 console.log(ll);
-                $('.gameReset').remove();
+                $('.gameReset').empty();
                 startGame();
             } else if (yy===ll) {
                 ii++;
                 console.log('you win');
                 console.log('win:' + ii);
                 console.log('we need to reset this');
+                uWins.text(ii);
+                //reset
                 r = 0;
                 console.log(r);
                 t = [];
                 console.log(t);
-                
                 ll = Math.floor(Math.random() * 18) + 30;
                 console.log(ll);
-                $('.gameReset').children().empty();
+                $('.gameReset').empty();
                 startGame();
             }
         });
-            
+
         // //s = total section to visible value
         // s = $('<section></section>').appendTo('#game').addClass('bg-secondary text-light');
         // //when you click the donut

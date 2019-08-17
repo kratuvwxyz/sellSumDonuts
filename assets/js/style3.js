@@ -23,7 +23,7 @@ $(document).ready(function(){
     //uu = image
     uu = $('<div></div>').html('<img src="assets/images/heroImgLg.jpg" width="100%"/>').appendTo(f);
     //g = ul regarding instruction
-    g = $('<ul></ul>').appendTo(f).append("<li>Let's sell some donuts.</li>").append('<li>This memory game help you to improve your math.</li>').append('<li>Easy to play and fun to compete yourself!</li>').append("<li>First, buyer wants to buy some donuts with some amount of money! (Remember this change every game!)</li>").append("<li>Second, you see four donuts that carries different prices. Once you click them, you sell that donut with that price.</li>").append("<li>Match exact amount buyer wants to pay with selling your donuts to win this game.</li>").addClass('p-3 border border-light list-group').children().addClass('p-2 text-monospace list-group-item');//console.log(g);
+    g = $('<ul></ul>').appendTo(f).append("<li>Let's sell some donuts.</li>").append('<li>This memory game helps  you to improve your math.</li>').append('<li>Easy to play and fun to compete yourself!</li>').append("<li>First, buyer wants to buy some donuts with some amount of money! (Remember this change every game!)</li>").append("<li>Second, you see four donuts that carries different prices. Once you click them, you sell that donut with that price.</li>").append("<li>Match exact amount buyer wants to pay with selling your donuts to win this game.</li>").addClass('p-3 border border-light list-group').children().addClass('p-2 text-monospace list-group-item');//console.log(g);
     //h = play button
     h = $('<button></button>').appendTo(f).text('NOW PLAY').addClass('btn btn-light m-3').click(function(){
         g.hide();
@@ -38,7 +38,7 @@ $(document).ready(function(){
         f.hide();
     }).hide();
     //game div = m
-    m = $('<div></div>').addClass('bg-light container-fluid').appendTo('#game').hide();
+    m = $('<div></div>').addClass('container-fluid').appendTo('#game').hide();
     //game structure = m
         //header = n
             //instruction = o
@@ -60,9 +60,9 @@ $(document).ready(function(){
             //text
     //--**--//
     //--header = n
-    n = $('<header></header>').addClass('row p-3 m-1').appendTo(m);
+    n = $('<header></header>').addClass('row bg-light p-3').appendTo(m);
     //instruction button = o
-    o = $('<button></button>').appendTo(n).text('INSTRUCTION').addClass('btn btn-info mr-3').click(function(){
+    o = $('<button></button>').appendTo(n).text('INSTRUCTION').addClass('btn btn-info m-3').click(function(){
         tt.hide();
         uu.hide();
         f.show();
@@ -70,7 +70,7 @@ $(document).ready(function(){
         l.show();
     });
     //game modes = p
-    p = $('<div></div>').addClass('btn-group mr-3').appendTo(n);
+    p = $('<div></div>').addClass('btn-group m-3').appendTo(n);
     //buttons with easy, normal and expert modes
     q = $('<button></button>').addClass('btn btn-success').text('EASY').appendTo(p).click(function(){//console.log('easy button clicked');
     });//easy
@@ -79,15 +79,15 @@ $(document).ready(function(){
     s = $('<button></button>').addClass('btn btn-danger').text('EXPERT').appendTo(p).click(function(){//console.log('expert button clicked');
     });//expert
     //wins = t
-    t = $('<button></button>').addClass('btn btn-secondary mr-3').text('WINS ').appendTo(n);
+    t = $('<button></button>').addClass('btn btn-secondary m-3').text('WINS ').appendTo(n);
         //result = u
         u = $('<span></span>').addClass('wins badge badge-light ml-1').text(b).appendTo(t);//console.log(u);
     //loss = v
-    v = $('<button></button>').addClass('btn btn-secondary mr-3').text('LOSS ').appendTo(n);
+    v = $('<button></button>').addClass('btn btn-secondary m-3').text('LOSS ').appendTo(n);
         //result = w
         w = $('<span></span>').addClass('loss badge badge-light ml-1').text(c).appendTo(v);//console.log(w);
     //average = x
-    x = $('<button></button>').addClass('btn btn-secondary mr-3').text('AVERAGE ').appendTo(n);
+    x = $('<button></button>').addClass('btn btn-secondary m-3').text('AVERAGE ').appendTo(n);
         //result = y
         y = $('<span></span>').addClass('avrg badge badge-light ml-1').text('0').appendTo(x);//console.log(y);
     //--**--//  
@@ -132,7 +132,7 @@ $(document).ready(function(){
 
         //for loop
         for(i = 0; i < 4; i++){
-            oo = $('<div></div>').addClass('button col-sm-3 p-2 mx-auto').attr('value', gg[i]).html('<img src="assets/images/'+xx[i]+'.svg" />').appendTo(cc);
+            oo = $('<div></div>').addClass('button col-6 col-sm-3 p-2 mx-auto my-2').attr('value', gg[i]).html('<img src="assets/images/'+xx[i]+'.svg" />').appendTo(cc);
         }
 
     }
