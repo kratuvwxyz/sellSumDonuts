@@ -132,7 +132,7 @@ $(document).ready(function(){
 
         //for loop
         for(i = 0; i < 4; i++){
-            oo = $('<div></div>').addClass('button spinner p-5 mx-auto').attr('value', gg[i]).html('<img src="assets/images/'+xx[i]+'.svg" width="150" />').appendTo(cc);
+            oo = $('<div></div>').addClass('button col-sm-3 p-2 mx-auto').attr('value', gg[i]).html('<img src="assets/images/'+xx[i]+'.svg" />').appendTo(cc);
         }
 
     }
