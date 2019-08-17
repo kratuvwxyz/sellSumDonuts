@@ -63,7 +63,8 @@ console.log(randomValue);
 //2
 
 var previous = 0; // this is the total value that adding in your list
-
+$("#previous").html('$' + previous);
+console.log(previous);
 
 //2.1
 
@@ -92,6 +93,8 @@ var startGame = function() {
 	}
 	console.log(ranNums);
 
+	var images = ["assets/images/1.svg", "assets/images/2.svg", "assets/images/3.svg", "assets/images/4.svg", "assets/images/6.svg", "assets/images/7.svg", "assets/images/5.svg", "assets/images/8.svg"];
+
     for (var i = 0; i < 4; i++) {
 		var random = Math.floor(Math.random() * 11) + 1; //value between 1 and 12
 		randomValue.push(random);
@@ -100,8 +103,6 @@ var startGame = function() {
             "class": 'crystal',
             "data-random": random
 		});
-		
-        var images = ["assets/images/1.svg", "assets/images/2.svg", "assets/images/3.svg", "assets/images/4.svg", "assets/images/6.svg", "assets/images/7.svg", "assets/images/5.svg", "assets/images/8.svg"];
 
 		var k = [ranNums[1],ranNums[3],ranNums[5],ranNums[7]]
 		console.log("k " + k);
@@ -115,7 +116,7 @@ var startGame = function() {
 			// $(".crystals").append(randomValue2);
 			// console.log(randomValue2);
         
-        $("#previous").html('$' + previous);
+
     }
 
 };
