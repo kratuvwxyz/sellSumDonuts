@@ -1,9 +1,11 @@
-# Sell Sum Donuts<img src="/assets/images/heroImg.png" alt="sellSumDonuts" width="200px"/>
+# Sell Sum Donuts<img src="/images/heroImg.png" alt="sellSumDonuts" width="200px"/>
 
 - Game that sharp your math skills.
 - Game that boost your memory.
 - Game that has lots of fun!
-- Game for all ages with **Easy**, **Medium**, and **Expert** levels.*
+- Game for all ages.
+
+##### Used JQuery to build this application.
 
 ### How to play?
 
@@ -18,26 +20,34 @@
 
 * A little bit knowledge of math.
 
-### Built with
+### Version
 
-- HTML5
-- CSS3
-- Bootstrap
-- w3.css
-- JavaScript
-- jQuery
+- **2103180934**
+- Last Update: 21/03/18
+
+### Standards
+
+- HTML5, JavaScript, CSS3
+
+### Components
+
+- JQuery, Bootstrap, SVG
+
+### Software
+
+- Visual Studio Code Editor
 - Github for versioning
+
 
 ## CONTACT
 
-**I'd Love To Hear From You.**
-Thank you for your time and consideration. My Mantra is simple, *no one is perfect, and criticism is always welcome and expected*. Your opinion matters. I hope you enjoy my work. Please contact at <a href="mailto:github@desaign.studio?Subject=Message from Github">github@desaign.studio</a>.
+Thank you for your time and consideration. My mantra is simple, *chase perfection to catch excellence*. I hope you enjoy my work. **I'd love to hear from you.** Please email me at <a href="mailto:github@desaign.studio?Subject=Message from Github">github@desaign.studio</a>.
 
 <hr/>
 
-<img src="https://kratuvwxyz.github.io/assets/images/footer/DESAIGNLLC.svg" alt="DESAIGN LLC" width="250px"/> &copy; 2011-2018. <a href="http://desaign.studio" target="_blank" style="text-decoration:none;">DESAIGN.STUDIO</a>. All Rights Reseverd. &#160;
-<a href="https://www.facebook.com/desaignstudio" target="_blank" style="text-decoration:none;"><img src="https://kratuvwxyz.github.io/assets/images/footer/facebook.svg" alt="facebook" width="25" /></a> &#160;
-<a href="https://www.twitter.com/desaignstudio" target="_blank" style="text-decoration:none;"><img src="https://kratuvwxyz.github.io/assets/images/footer/twitter.svg" alt="twitter" width="25" /></a> &#160;
-<a href="https://www.linkedin.com/in/desaignstudio/" target="_blank" style="text-decoration:none;"><img src="https://kratuvwxyz.github.io/assets/images/footer/linkedin.svg" alt="facebook" width="25" /></a> &#160;
-<a href="http://desaign.in" target="_blank" style="text-decoration:none;"><img src="https://kratuvwxyz.github.io/assets/images/footer/blog.svg" alt="DESAIGN BLOG" width="25" /></a> &#160;
+<img src="https://desaign.app/clients/cli/images/logo/desaign-logo-black.png" alt="DESAIGN LLC" width="250px"/> &copy; 2011-2021. <a href="https://desaign.app" target="_blank" style="text-decoration:none;">DESAIGN STUDIO</a>. All Rights Reseverd. &#160;
+<a href="https://www.facebook.com/desaignstudio" target="_blank" style="text-decoration:none;"><img src="https://desaign.app/clients/cli/images/1x/facebook.png" alt="Facebook" width="25" /></a> &#160;
+<a href="https://www.twitter.com/desaignstudio" target="_blank" style="text-decoration:none;"><img src="https://desaign.app/clients/cli/images/1x/twitter.png" alt="Twitter" width="25" /></a> &#160;
+<a href="https://www.linkedin.com/company/desaignstudio" target="_blank" style="text-decoration:none;"><img src="https://desaign.app/clients/cli/images/1x/linkedin.png" alt="Linked In" width="25" /></a> &#160;
+<a href="https://desaigner.info" target="_blank" style="text-decoration:none;"><img src="https://desaign.app/clients/cli/images/1x/blog.png" alt="DESAIGN BLOG" width="25" /></a> &#160;
 
