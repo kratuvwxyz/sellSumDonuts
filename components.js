@@ -25,6 +25,10 @@ container = (a, b, c, d) => {
     $("<div>").appendTo(a).addClass("container").attr("id", b);
     $("<div>").appendTo("#"+b).addClass("row").attr("id", c).addClass(d);
 }
+containerFluid = (a, b, c, d) => {
+    $("<div>").appendTo(a).addClass("container-fluid").attr("id", b);
+    $("<div>").appendTo("#"+b).addClass("row").attr("id", c).addClass(d);
+}
 
 /* 
 column
